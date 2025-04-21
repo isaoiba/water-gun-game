@@ -26,7 +26,6 @@ public class ui_suimonoHandler : MonoBehaviour {
 		uiCanvasScale = this.transform.GetComponent<CanvasScaler>();
 
 		//find UI objects
-		textVersion = GameObject.Find("Text_version").GetComponent<Text>();
 		sliderTOD = GameObject.Find("Slider_TOD").GetComponent<Slider>();
 		sliderBeaufort = GameObject.Find("Slider_Beaufort").GetComponent<Slider>();
 
@@ -54,7 +53,6 @@ public class ui_suimonoHandler : MonoBehaviour {
 		//###########################
 		// SET SUIMONO SETTINGS
 		//###########################
-		if (suimonoModule != null) textVersion.text = "Version "+suimonoModule.suimonoVersionNumber;
 		if (suimonoObject != null) suimonoObject.beaufortScale = sliderBeaufort.value;
 
 	}
