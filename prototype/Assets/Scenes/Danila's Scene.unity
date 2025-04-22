@@ -281,7 +281,7 @@ Terrain:
   m_TerrainData: {fileID: 15600000, guid: 371ceea51d07fe840b912f8b7adb0da3, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
+  m_TreeCrossFadeLength: 200
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
@@ -578,7 +578,7 @@ Terrain:
   m_TerrainData: {fileID: 15600000, guid: affc416a7b26ccd4097b573dc85eff4e, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
+  m_TreeCrossFadeLength: 200
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
@@ -671,7 +671,7 @@ Terrain:
   m_TerrainData: {fileID: 15600000, guid: b3555be16a8876b4095c0ba1062563be, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
+  m_TreeCrossFadeLength: 200
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
