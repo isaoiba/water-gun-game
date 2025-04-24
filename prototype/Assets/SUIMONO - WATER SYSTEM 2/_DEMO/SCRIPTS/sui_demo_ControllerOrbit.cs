@@ -334,9 +334,6 @@ public class sui_demo_ControllerOrbit : MonoBehaviour {
 			targetAnimator.isUnderWater = isUnderWater;	
 		}
 	}
-
-
-
 }
 
 
