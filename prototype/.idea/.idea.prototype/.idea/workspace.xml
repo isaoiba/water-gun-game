@@ -5,14 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd0c565a-c92c-478d-a9f5-95466ce247c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levi's Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levi's Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialsLevi.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialsLevi/Enemy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialsLevi/Enemy.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialsLevi/New Layer Palette.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialsLevi/New Layer Palette.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialsLevi/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialsLevi/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialsLevi/WaterGun.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialsLevi/WaterGun.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialsLevi/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialsLevi/test.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsLevi.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsLevi/EnemyHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsLevi/EnemyHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsLevi/FollowMouse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsLevi/FollowMouse.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsLevi/GunHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsLevi/GunHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsLevi/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsLevi/Player.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsLevi/PlayerMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsLevi/PlayerMovement.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +113,8 @@
       <workItem from="1744921000525" duration="2684000" />
       <workItem from="1745351272758" duration="3114000" />
       <workItem from="1745354570953" duration="800000" />
+      <workItem from="1745524271943" duration="68000" />
+      <workItem from="1745524349802" duration="1632000" />
     </task>
     <servers />
   </component>

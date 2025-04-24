@@ -6,7 +6,7 @@ public class EnemyHandler : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float Health = 10f;
+    public static float Health = 100f;
 
     public void SubtractHealth(float Damage)
     {
