@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour
  void Start()
     {
  // Get and store the NavMeshAgent component attached to this object.
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
 

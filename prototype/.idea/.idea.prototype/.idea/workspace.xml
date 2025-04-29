@@ -7,10 +7,82 @@
     <list default="true" id="dd0c565a-c92c-478d-a9f5-95466ce247c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/EnemyCube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/EnemyCube.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levi's Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levi's Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Info/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Info/New Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemy.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Enemy.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/WaterGun.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/WaterGun.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/TEXTURES/mat_under_assist.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/TEXTURES/mat_under_assist.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/TEXTURES/mat_water_shadow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/TEXTURES/mat_water_shadow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/character_miho/textures/mat_charac_body.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/character_miho/textures/mat_charac_body.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/character_miho/textures/mat_charac_head.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/character_miho/textures/mat_charac_head.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/character_miho/textures/mat_charac_ties.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/character_miho/textures/mat_charac_ties.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/objects/Materials/GridBox_Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/objects/Materials/GridBox_Default.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/textures/mat_basicBuoyObject.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/textures/mat_basicBuoyObject.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/textures/mat_boat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/OBJECTS/textures/mat_boat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Misc/Materials/mat_shimenawa.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Misc/Materials/mat_shimenawa.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Misc/Materials/mat_sign_caution.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Misc/Materials/mat_sign_caution.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Plants/Mesh/Materials/No Name.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Plants/Mesh/Materials/No Name.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock03.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock04.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock04.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock05.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock05.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/WoodenCrates/Materials/mat_woodencrates.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/WoodenCrates/Materials/mat_woodencrates.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/WoodenCrates/Meshes/Materials/diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/WoodenCrates/Meshes/Materials/diffuse.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TextFollow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TextFollow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/M_Lava01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/M_Lava01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/M_Lava01_Variant01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/M_Lava01_Variant01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/M_Lava02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/M_Lava02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/M_Lava03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/M_Lava03.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/M_Lava04.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/M_Lava04.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/M_Lava05.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/M_Lava05.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Banana tree Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Banana tree Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Big sharp leafs Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Big sharp leafs Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Bush 01 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Bush 01 Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Bush 02 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Bush 02 Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Bush 03 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Bush 03 Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Bush 04 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Bush 04 Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Fern Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Fern Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 01 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 01 Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 02 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 02 Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 03 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 03 Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 04 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 04 Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 06 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 06 Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 07 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 07 Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 08 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 08 Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Palm Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Palm Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_10_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_10_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_10_Diffuse2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_10_Diffuse2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_10_Diffuse3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_10_Diffuse3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_11_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_11_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_12_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_12_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_13_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_13_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_13_Diffuse2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_13_Diffuse2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_14_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_14_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_14_Diffuse2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_14_Diffuse2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_15_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_15_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_15_Diffuse2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_15_Diffuse2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_1_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_1_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_1_Diffuse3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_1_Diffuse3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_2_Diffuse2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_2_Diffuse2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_2_Diffuse3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_2_Diffuse3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_4_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_4_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_4_Diffuse2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_4_Diffuse2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_5_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_5_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_5_Diffuse2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_5_Diffuse2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_6_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_6_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_7_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_7_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_7_Diffuse2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_7_Diffuse2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_9_Diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yoge/Textures/Stylized - Nature/Materials/Texture_9_Diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yughues Free Palm Trees/Demo/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yughues Free Palm Trees/Demo/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yughues Free Palm Trees/Materials/PalmTrees Leafs Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yughues Free Palm Trees/Materials/PalmTrees Leafs Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yughues Free Palm Trees/Materials/PalmTrees trunk Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yughues Free Palm Trees/Materials/PalmTrees trunk Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +167,9 @@
       <workItem from="1745351272758" duration="3114000" />
       <workItem from="1745354570953" duration="800000" />
       <workItem from="1745524271943" duration="68000" />
-      <workItem from="1745524349802" duration="3526000" />
+      <workItem from="1745524349802" duration="3995000" />
+      <workItem from="1745870881738" duration="435000" />
+      <workItem from="1745871352203" duration="1649000" />
     </task>
     <servers />
   </component>
