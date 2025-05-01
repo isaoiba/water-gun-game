@@ -6,11 +6,13 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private PlayerCharacter playerCharacter;
+    [SerializeField] private PlayerCamera playerCamera;
+    
     // Start is called before the first frame update
     public TextMeshProUGUI countText;
 
     // UI object to display winning text.
-    public GameObject playerob;
     public GameObject winTextObject;
     public int count;
 
@@ -18,6 +20,8 @@ public class Player : MonoBehaviour
     private void Start()
     {
         SetCountText();
+        playerCharacter.Initialize();
+        playerCamera.Initialize(playerCharacter.getCameraTarget());
     }
 
     void Update()
