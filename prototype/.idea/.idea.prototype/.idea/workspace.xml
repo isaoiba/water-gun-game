@@ -6,20 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dd0c565a-c92c-478d-a9f5-95466ce247c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Runtime/Input/PlayerInputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Runtime/Input/PlayerInputActions.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock04.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SUIMONO - WATER SYSTEM 2/_DEMO/TERRAIN/Objects/Rocks/Materials/mat_rock04.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levi's Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levi's Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Banana tree Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Banana tree Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Big sharp leafs Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Big sharp leafs Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Bush 04 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Bush 04 Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Fern Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Fern Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 01 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 01 Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 02 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 02 Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 03 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 03 Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 07 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 07 Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 08 Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized foliages pack/Materials/Grass 08 Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +98,7 @@
       <workItem from="1745951575119" duration="162000" />
       <workItem from="1745951749252" duration="953000" />
       <workItem from="1746127975068" duration="52000" />
-      <workItem from="1746128036662" duration="305000" />
+      <workItem from="1746128036662" duration="769000" />
     </task>
     <servers />
   </component>

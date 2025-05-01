@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     {
         SetCountText();
         playerCharacter.Initialize();
-        playerCamera.Initialize(playerCharacter.getCameraTarget());
+        //playerCamera.Initialize(playerCharacter.getCameraTarget());
     }
 
     void Update()
