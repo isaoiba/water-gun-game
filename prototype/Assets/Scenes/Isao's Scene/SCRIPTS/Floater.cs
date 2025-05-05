@@ -1,64 +1,68 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.HighDefinition;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Floater : MonoBehaviour
 {
-    [Header("Water Settings")]
-    public WaterSurface waterSurface;       // Reference to ocean object (HDRP Water System)
-    public Material waterMaterial;          // Reference to water shader/material used
+    public Transform[] floaters;
+    public float underWaterDrag = 3f;
+    public float underWaterAngularDrag = 1f;
+    public float airDrag = 0f;
+    public float airAngularDrag = 0.05f;
+    public float floatingPower = 15f;
+    public float waterHeight = 0f; // Set this to the y-position of your water surface
 
-    [Header("Object Settings")]
-    public float objectVolume = 5f;         // Approximate volume of the object in m³
-    public float fluidDensity = 1000f;      // Density of fluid (water = 1000 kg/m³)
-    public float verticalOffset = 0f;       // Offset from pivot to bottom of the object
-
-    private Rigidbody rb;
-    private float gravity;
+    private Rigidbody m_Rigidbody;
+    int floatersUnderwater;
+    private bool underwater;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        gravity = Mathf.Abs(Physics.gravity.y);
+        m_Rigidbody = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    void FixedUpdate() // This must be FixedUpdate, not FixedBody
     {
-        if (waterSurface == null || waterMaterial == null) return;
-
-        float waterY = GetWaterHeight(transform.position);
-        Debug.Log("waterY: " + waterY);
-
-        float objectY = transform.position.y + verticalOffset;
-        float submergedDepth = waterY - objectY;
-
-        if (submergedDepth > 0f)
+        floatersUnderwater = 0;
+        for (int i = 0; i < floaters.Length; i++)
         {
-            float submergedFraction = Mathf.Clamp01(submergedDepth / transform.localScale.y);
-            float buoyancyForce = fluidDensity * gravity * objectVolume * submergedFraction;
+            float difference = floaters[i].position.y - waterHeight;
 
-            rb.AddForce(Vector3.up * buoyancyForce, ForceMode.Force);
+            if (difference < 0)
+            {
+                m_Rigidbody.AddForceAtPosition(
+                    Vector3.up * floatingPower * Mathf.Abs(difference),
+                    floaters[i].position,
+                    ForceMode.Force
+                );
+                floatersUnderwater += 1;
+
+                if (!underwater)
+                {
+                    underwater = true;
+                    SwitchState(true);
+                }
+            }
+        }
+        if (underwater && floatersUnderwater == 0)
+        {
+            underwater = false;
+            SwitchState(false);
         }
     }
 
-    float GetWaterHeight(Vector3 position)
+    void SwitchState(bool isUnderwater)
     {
-        // Fetch wave properties from the water material
-        float waveStrength = waterMaterial.GetFloat("_WaveStrength");
-        float waveSpeed = waterMaterial.GetFloat("_WaveSpeed");
-        float waveTile = waterMaterial.GetFloat("_WaveTile");
-
-        float time = Time.time;
-
-        // Approximate wave using simple sine/cosine pattern
-        float wave =
-            Mathf.Sin(position.x * waveTile + time * waveSpeed) +
-            Mathf.Cos(position.z * waveTile + time * waveSpeed);
-
-        wave *= waveStrength * 0.5f;
-
-        return waterSurface.transform.position.y + wave;
+        if (isUnderwater)
+        {
+            m_Rigidbody.drag = underWaterDrag;
+            m_Rigidbody.angularDrag = underWaterAngularDrag;
+        }
+        else
+        {
+            m_Rigidbody.drag = airDrag;
+            m_Rigidbody.angularDrag = airAngularDrag;
+        }
     }
 }

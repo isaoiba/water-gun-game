@@ -10,8 +10,13 @@ public class PlayerBoatController : MonoBehaviour
     public float moveSpeed = 5f;
     public float rotationSpeed = 60f; // Degrees per second
 
+    public Camera mainCamera; // Camera to follow the boat
+    public Vector3 cameraOffset = new Vector3(0f, 10f, -10f); // Set in Inspector or adjust here
+
     private float moveForward = 0.0f;
     private float moveSideways = 0.0f;
+
+    private float currentAngleZ = 0.0f; // Store the boat's rotation (Z-axis)
 
     void Update()
     {
@@ -20,6 +25,12 @@ public class PlayerBoatController : MonoBehaviour
 
         HandleInput();
         MoveBoat();
+
+        if (mainCamera != null)
+        {
+            mainCamera.transform.position = transform.position + cameraOffset;
+            mainCamera.transform.LookAt(transform.position);
+        }
     }
 
     void HandleInput()
@@ -46,52 +57,29 @@ public class PlayerBoatController : MonoBehaviour
         }
     }
 
-private float currentAngleZ = 0.0f; // Store the boat's rotation (Z-axis)
-
-void MoveBoat()
-{
-    // Forward/backward movement using the boat's current rotation (calculated from currentAngleZ)
-    if (moveForward != 0.0f)
+    void MoveBoat()
     {
-        // Convert current rotation angle to radians
-        float radians = currentAngleZ * Mathf.Deg2Rad;
+        if (moveForward != 0.0f)
+        {
+            float radians = currentAngleZ * Mathf.Deg2Rad;
+            float x = Mathf.Sin(radians);
+            float z = Mathf.Cos(radians);
+            Vector3 moveDirection = new Vector3(x, 0.0f, z);
+            transform.position += moveDirection * -moveForward * moveSpeed * Time.deltaTime;
+        }
 
-        // Calculate direction based on current rotation
-        float x = Mathf.Sin(radians);
-        float z = Mathf.Cos(radians);
+        if (moveSideways != 0.0f)
+        {
+            float rotationAmount = moveSideways * rotationSpeed * Time.deltaTime;
+            currentAngleZ += rotationAmount;
 
-        // Move forward or backward along the direction the boat is facing
-        Vector3 moveDirection = new Vector3(x, 0.0f, z);
-        
-        // Apply movement along the direction in the XZ-plane
-        transform.position += moveDirection * -moveForward * moveSpeed * Time.deltaTime;
+            float radians = currentAngleZ * Mathf.Deg2Rad;
+            float xSide = Mathf.Cos(radians);
+            float zSide = Mathf.Sin(radians);
+            Vector3 sideMoveDirection = new Vector3(-zSide, 0.0f, xSide);
+            transform.position += sideMoveDirection * moveSideways * moveSpeed * Time.deltaTime;
+
+            transform.Rotate(0f, 0f, rotationAmount);
+        }
     }
-
-    // Sideways movement (left/right) using the boat's rotation (calculated from currentAngleZ)
-    if (moveSideways != 0.0f)
-    {
-        // Calculate the rotation amount for sideways movement
-        float rotationAmount = moveSideways * rotationSpeed * Time.deltaTime;
-        
-        // Update the boat's current rotation based on the input
-        currentAngleZ += rotationAmount;
-
-        // Convert the updated rotation to radians for sideways movement
-        float radians = currentAngleZ * Mathf.Deg2Rad;
-
-        // Calculate sideways movement (perpendicular to the forward direction)
-        float xSide = Mathf.Cos(radians);
-        float zSide = Mathf.Sin(radians);
-
-        // Sideways movement happens opposite to the forward direction
-        Vector3 sideMoveDirection = new Vector3(-zSide, 0.0f, xSide);  // Perpendicular direction
-        transform.position += sideMoveDirection * moveSideways * moveSpeed * Time.deltaTime;
-
-        // Rotate the boat around the Z-axis based on the sideways input
-        transform.Rotate(0f, 0f, rotationAmount); // Rotate the boat around Z-axis
-    }
-}
-
-
-
 }
