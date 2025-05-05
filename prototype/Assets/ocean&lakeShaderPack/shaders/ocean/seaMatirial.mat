@@ -108,7 +108,7 @@ Material:
     - _foam_speed: 0.01
     - _foam_strength: 0
     - _fresnel_power: 1.12
-    - _normal_speed: 1
+    - _normal_speed: 0.79
     - _normal_tile: 1
     - _oclussion_strength: 1
     - _offset: 1
@@ -117,8 +117,8 @@ Material:
     - _waveBumps_spees: 0.7
     - _waveColor_speed: 4
     - _wave_scale: 16
-    - _wave_speed: 2
-    - _wave_strength: 5
+    - _wave_speed: 0.1
+    - _wave_strength: 28.59
     - _wave_tile: 1.7
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

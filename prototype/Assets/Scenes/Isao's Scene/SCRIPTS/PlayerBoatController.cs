@@ -29,11 +29,11 @@ public class PlayerBoatController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
         {
-            moveForward = 1.0f;
+            moveForward = -1.0f;
         }
         else if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))
         {
-            moveForward = -1.0f;
+            moveForward = 1.0f;
         }
 
         if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
