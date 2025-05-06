@@ -10,13 +10,18 @@ public class PlayerBoatController : MonoBehaviour
     public float moveSpeed = 5f;
     public float rotationSpeed = 60f; // Degrees per second
 
-    public Camera mainCamera; // Camera to follow the boat
-    public Vector3 cameraOffset = new Vector3(0f, 10f, -10f); // Set in Inspector or adjust here
+    public Camera mainCamera;
+    public Vector3 cameraOffset = new Vector3(0f, 10f, -10f);
 
     private float moveForward = 0.0f;
     private float moveSideways = 0.0f;
 
-    private float currentAngleZ = 0.0f; // Store the boat's rotation (Z-axis)
+    private float currentAngleZ = 0.0f;
+
+    // Camera rotation
+    public float mouseSensitivity = 2.0f;
+    private float yaw = 0.0f;
+    private float pitch = 20.0f; // Slight downward look
 
     void Update()
     {
@@ -28,8 +33,7 @@ public class PlayerBoatController : MonoBehaviour
 
         if (mainCamera != null)
         {
-            mainCamera.transform.position = transform.position + cameraOffset;
-            mainCamera.transform.LookAt(transform.position);
+            HandleCamera();
         }
     }
 
@@ -81,5 +85,24 @@ public class PlayerBoatController : MonoBehaviour
 
             transform.Rotate(0f, 0f, rotationAmount);
         }
+    }
+
+    void HandleCamera()
+    {
+        if (Input.GetMouseButton(0)) // Left mouse held
+        {
+            float mouseX = Input.GetAxis("Mouse X");
+            float mouseY = Input.GetAxis("Mouse Y");
+
+            yaw += mouseX * mouseSensitivity;
+            pitch -= mouseY * mouseSensitivity;
+            pitch = Mathf.Clamp(pitch, 10f, 80f); // Prevent flipping
+        }
+
+        Quaternion rotation = Quaternion.Euler(pitch, yaw, 0f);
+        Vector3 desiredPosition = transform.position + rotation * cameraOffset;
+
+        mainCamera.transform.position = desiredPosition;
+        mainCamera.transform.LookAt(transform.position);
     }
 }
