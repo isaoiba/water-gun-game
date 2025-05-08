@@ -13,7 +13,9 @@ public class PlayerBoatController : MonoBehaviour
     public float slowedRotationSpeed = 15f;
 
     public Camera mainCamera;
-    public Vector3 cameraOffset = new Vector3(0f, 10f, -10f);
+    public Vector3 cameraOffset;
+    public GameObject oceanSurface;  // Reference to the ocean surface GameObject
+    public Vector3 oceanSurfaceOffset;  // Offset for the ocean surface to follow the boat
 
     private float moveForward = 0.0f;
     private float moveSideways = 0.0f;
@@ -38,6 +40,8 @@ public class PlayerBoatController : MonoBehaviour
         {
             HandleCamera();
         }
+
+        MoveOceanSurface();  // Move the ocean surface with the boat
     }
 
     void HandleInput()
@@ -68,6 +72,7 @@ public class PlayerBoatController : MonoBehaviour
     {
         float currentMoveSpeed = isTouchingLand ? slowedMoveSpeed : moveSpeed;
         float currentRotationSpeed = isTouchingLand ? slowedRotationSpeed : rotationSpeed;
+
         if (moveForward != 0.0f)
         {
             float radians = currentAngleZ * Mathf.Deg2Rad;
@@ -105,10 +110,19 @@ public class PlayerBoatController : MonoBehaviour
         }
 
         Quaternion rotation = Quaternion.Euler(pitch, yaw, 0f);
-        Vector3 desiredPosition = transform.position + rotation * cameraOffset;
+        Vector3 desiredCameraPosition = transform.position + rotation * cameraOffset;
 
-        mainCamera.transform.position = desiredPosition;
+        mainCamera.transform.position = desiredCameraPosition;
         mainCamera.transform.LookAt(transform.position);
+    }
+
+    void MoveOceanSurface()
+    {
+        // Adjust ocean surface position based on the boat's position and the offset
+        if (oceanSurface != null)
+        {
+            oceanSurface.transform.position = transform.position + oceanSurfaceOffset;
+        }
     }
 
     void OnCollisionStay(Collision collision)
@@ -131,5 +145,4 @@ public class PlayerBoatController : MonoBehaviour
     {
         return isTouchingLand;
     }
-    
 }
