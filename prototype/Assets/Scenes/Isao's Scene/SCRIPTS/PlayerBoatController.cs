@@ -9,6 +9,8 @@ public class PlayerBoatController : MonoBehaviour
 
     public float moveSpeed = 5f;
     public float rotationSpeed = 60f; // Degrees per second
+    public float slowedMoveSpeed = 1f;
+    public float slowedRotationSpeed = 15f;
 
     public Camera mainCamera;
     public Vector3 cameraOffset = new Vector3(0f, 10f, -10f);
@@ -22,6 +24,7 @@ public class PlayerBoatController : MonoBehaviour
     public float mouseSensitivity = 2.0f;
     private float yaw = 0.0f;
     private float pitch = 20.0f; // Slight downward look
+    private bool isTouchingLand = false;
 
     void Update()
     {
@@ -63,25 +66,27 @@ public class PlayerBoatController : MonoBehaviour
 
     void MoveBoat()
     {
+        float currentMoveSpeed = isTouchingLand ? slowedMoveSpeed : moveSpeed;
+        float currentRotationSpeed = isTouchingLand ? slowedRotationSpeed : rotationSpeed;
         if (moveForward != 0.0f)
         {
             float radians = currentAngleZ * Mathf.Deg2Rad;
             float x = Mathf.Sin(radians);
             float z = Mathf.Cos(radians);
             Vector3 moveDirection = new Vector3(x, 0.0f, z);
-            transform.position += moveDirection * -moveForward * moveSpeed * Time.deltaTime;
+            transform.position += moveDirection * -moveForward * currentMoveSpeed * Time.deltaTime;
         }
 
         if (moveSideways != 0.0f)
         {
-            float rotationAmount = moveSideways * rotationSpeed * Time.deltaTime;
+            float rotationAmount = moveSideways * currentRotationSpeed * Time.deltaTime;
             currentAngleZ += rotationAmount;
 
             float radians = currentAngleZ * Mathf.Deg2Rad;
             float xSide = Mathf.Cos(radians);
             float zSide = Mathf.Sin(radians);
             Vector3 sideMoveDirection = new Vector3(-zSide, 0.0f, xSide);
-            transform.position += sideMoveDirection * moveSideways * moveSpeed * Time.deltaTime;
+            transform.position += sideMoveDirection * moveSideways * currentMoveSpeed * Time.deltaTime;
 
             transform.Rotate(0f, 0f, rotationAmount);
         }
@@ -105,4 +110,26 @@ public class PlayerBoatController : MonoBehaviour
         mainCamera.transform.position = desiredPosition;
         mainCamera.transform.LookAt(transform.position);
     }
+
+    void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.GetComponent<Terrain>())
+        {
+            isTouchingLand = true;
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.GetComponent<Terrain>())
+        {
+            isTouchingLand = false;
+        }
+    }
+
+    public bool IsTouchingLand()
+    {
+        return isTouchingLand;
+    }
+    
 }
