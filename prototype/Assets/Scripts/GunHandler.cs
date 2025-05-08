@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,11 +20,15 @@ public class RaycastGun : MonoBehaviour
     {
         laserLine = GetComponent<LineRenderer>();
     }
- 
-    void Update()
+
+    private void Update()
+    {
+        laserLine.SetPosition(0, laserOrigin.position);
+    }
+
+    void LateUpdate()
     {
         fireTimer += Time.deltaTime;
-        laserLine.SetPosition(0, laserOrigin.position);
         Vector3 rayOrigin = playerCamera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
         if(Physics.Raycast(rayOrigin, playerCamera.transform.forward, out hit, gunRange))
