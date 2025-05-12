@@ -1195,6 +1195,7 @@ namespace KinematicCharacterController
                 for (int i = 0; i < nbOverlaps; i++)
                 {
                     CharacterController.OnDiscreteCollisionDetected(_internalProbedColliders[i]);
+
                 }
             }
 

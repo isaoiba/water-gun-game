@@ -1,4 +1,5 @@
 using KinematicCharacterController;
+using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -123,6 +124,9 @@ public class PlayerCharacter : MonoBehaviour, ICharacterController
                         currentRotation = Quaternion.LookRotation(forward, motor.CharacterUp);
                 }
         }
+        
+        //70
+        
 
         /// <summary>
         /// This is called when the motor wants to know what its velocity should be right now
