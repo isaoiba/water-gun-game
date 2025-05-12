@@ -1192,8 +1192,8 @@ MonoBehaviour:
   standHeight: 2
   crouchHeight: 1
   crouchHeightResponse: 15
-  standCameraTargetHeight: 0.9
-  crouchCameraTargetHeight: 0.7
+  standCameraTargetHeight: 0.5
+  crouchCameraTargetHeight: 0
 --- !u!136 &1693170075
 CapsuleCollider:
   m_ObjectHideFlags: 8

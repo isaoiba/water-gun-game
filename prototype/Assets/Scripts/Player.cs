@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
     public void SetCountText() 
     {
         // Update the count text with the current count.
-        countText.text = "Enemies killed: " + count + "/5";
+        //countText.text = "Enemies killed: " + count + "/5";
 
         // Check if the count has reached or exceeded the win condition.
         if (count >= 5)
