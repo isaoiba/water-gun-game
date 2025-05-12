@@ -29,7 +29,7 @@ public class RaycastGun : MonoBehaviour
     void LateUpdate()
     {
         fireTimer += Time.deltaTime;
-        Vector3 rayOrigin = playerCamera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
+        Vector3 rayOrigin = playerCamera.ViewportToWorldPoint(new Vector3(0.5f, 0, 0));
         RaycastHit hit;
         if(Physics.Raycast(rayOrigin, playerCamera.transform.forward, out hit, gunRange))
         {
