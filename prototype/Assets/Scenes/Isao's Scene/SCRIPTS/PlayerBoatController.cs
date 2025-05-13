@@ -13,7 +13,7 @@ public class PlayerBoatController : MonoBehaviour
     public float slowedRotationSpeed = 15f;
 
     public Camera mainCamera;
-    public Vector3 cameraOffset;
+
     public GameObject oceanSurface;  // Reference to the ocean surface GameObject
     public Vector3 oceanSurfaceOffset;  // Offset for the ocean surface to follow the boat
 
@@ -24,8 +24,11 @@ public class PlayerBoatController : MonoBehaviour
 
     // Camera rotation
     public float mouseSensitivity = 2.0f;
-    private float yaw = 0.0f;
-    private float pitch = 20.0f; // Slight downward look
+    private float yaw = -102.4f;       
+    public Vector3 cameraOffset;
+    private float pitch = 20.0f;
+ 
+    private bool initialized = false;
     private bool isTouchingLand = false;
 
     void Update()
@@ -97,25 +100,38 @@ public class PlayerBoatController : MonoBehaviour
         }
     }
 
-    void HandleCamera()
+void HandleCamera()
+{
+    if (!initialized)
     {
-        if (Input.GetMouseButton(0)) // Left mouse held
-        {
-            float mouseX = Input.GetAxis("Mouse X");
-            float mouseY = Input.GetAxis("Mouse Y");
+        // Set the initial yaw and pitch to maximum values
+        yaw = 0f;           // You can set it to any value, e.g., 0f for starting view
+        pitch = 80f;       // Maximum downward angle for the camera view
 
-            yaw += mouseX * mouseSensitivity;
-            pitch -= mouseY * mouseSensitivity;
-            pitch = Mathf.Clamp(pitch, 10f, 80f); // Prevent flipping
-        }
-
-        Quaternion rotation = Quaternion.Euler(pitch, yaw, 0f);
-        Vector3 desiredCameraPosition = transform.position + rotation * cameraOffset;
-
-        mainCamera.transform.position = desiredCameraPosition;
-        mainCamera.transform.LookAt(transform.position);
+        initialized = true;
     }
 
+    if (Input.GetMouseButton(0)) // Left mouse held
+    {
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
+
+        yaw += mouseX * mouseSensitivity;
+        pitch -= mouseY * mouseSensitivity;
+
+        // Adjust pitch range for smoother control
+        pitch = Mathf.Clamp(pitch, -80f, 80f);
+    }
+
+    // Create rotation based on updated pitch and yaw
+    Quaternion rotation = Quaternion.Euler(pitch, yaw, 0f);
+
+    // Set camera position relative to the boat's position
+    mainCamera.transform.position = transform.position + rotation * cameraOffset;
+
+    // Make the camera look at the boat
+    mainCamera.transform.LookAt(transform.position);
+}
     void MoveOceanSurface()
     {
         // Adjust ocean surface position based on the boat's position and the offset
@@ -130,6 +146,7 @@ public class PlayerBoatController : MonoBehaviour
         if (collision.gameObject.GetComponent<Terrain>())
         {
             isTouchingLand = true;
+            Debug.Log("isTouchingLand" + isTouchingLand);
         }
     }
 
@@ -138,6 +155,7 @@ public class PlayerBoatController : MonoBehaviour
         if (collision.gameObject.GetComponent<Terrain>())
         {
             isTouchingLand = false;
+            Debug.Log("isTouchingLand" +  isTouchingLand);
         }
     }
 

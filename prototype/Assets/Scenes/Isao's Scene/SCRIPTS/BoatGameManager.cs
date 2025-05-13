@@ -9,7 +9,10 @@ public class BoatGameManager : MonoBehaviour
     public PlayerBoatController boatController;
     public GameObject player;
     public GameObject cube; // Assign in Inspector
-    public Camera mainCamera;
+
+    public Camera playerCamera; // Camera for walking around
+    public Camera boatCamera;   // Camera for when on the boat
+
     public TextMeshProUGUI messageText;
 
     public float cameraMoveSpeed = 5f;
@@ -20,21 +23,16 @@ public class BoatGameManager : MonoBehaviour
 
     private bool isOnBoat = false;
 
-    private float yaw = 0f;
-    private float pitch = 20f;
-
-
     void Start()
     {
         SetPlayerActive(true);
         boatController.isActive = false;
         boatController.mainCamera = null;
 
-        mainCamera.transform.SetParent(player.transform);
-        mainCamera.transform.localPosition = new Vector3(0f, 1.6f, -3f);
-        mainCamera.transform.localRotation = Quaternion.Euler(10f, 0f, 0f);
+        // Enable only the player camera initially
+        playerCamera.enabled = true;
+        boatCamera.enabled = false;
     }
-
 
     void Update()
     {
@@ -69,41 +67,47 @@ public class BoatGameManager : MonoBehaviour
         }
     }
 
-   void GetOnBoat()
+    void GetOnBoat()
+    {
+        isOnBoat = true;
+
+        SetPlayerActive(false);
+        boatController.isActive = true;
+        boatController.mainCamera = boatCamera;
+
+        // Camera switch
+        playerCamera.enabled = false;
+        boatCamera.enabled = true;
+
+        cube.SetActive(false); // Hide cube when on boat
+    }
+
+ void GetOffBoat()
 {
-    isOnBoat = true;
+    // Only allow getting off if boat is touching land
+    if (!boatController.IsTouchingLand())
+    {
+        messageText.text = "You can only get off near land!";
+        return;
+    }
 
-    SetPlayerActive(false);
-    boatController.isActive = true;
-    boatController.mainCamera = mainCamera;
-
-    mainCamera.transform.SetParent(boatController.transform);
-    mainCamera.transform.localPosition = new Vector3(0f, 3f, -6f);
-    mainCamera.transform.localRotation = Quaternion.Euler(20f, 0f, 0f);
-    mainCamera.fieldOfView = 75f;
-
-    cube.SetActive(false); // Hide cube when on boat
-}
-
-void GetOffBoat()
-{
     isOnBoat = false;
 
     boatController.isActive = false;
     boatController.mainCamera = null;
 
+    // Move player slightly to the side of the boat when disembarking
     Vector3 exitPosition = boatController.transform.position + boatController.transform.right * getOffOffset;
     player.transform.position = exitPosition;
+
     SetPlayerActive(true);
 
-    mainCamera.transform.SetParent(player.transform);
-    mainCamera.transform.localPosition = new Vector3(0f, 1.6f, -3f);
-    mainCamera.transform.localRotation = Quaternion.Euler(10f, 0f, 0f);
-    mainCamera.fieldOfView = 75f;
+    // Camera switch
+    playerCamera.enabled = true;
+    boatCamera.enabled = false;
 
     cube.SetActive(true); // Show cube when off boat
 }
-
 
 
     void SetPlayerActive(bool active)
@@ -115,26 +119,5 @@ void GetOffBoat()
         {
             controller.enabled = active;
         }
-    }
-
-    void HandleFreeCamera()
-    {
-        if (Input.GetMouseButton(1))
-        {
-            yaw += Input.GetAxis("Mouse X") * cameraLookSpeed;
-            pitch -= Input.GetAxis("Mouse Y") * cameraLookSpeed;
-            pitch = Mathf.Clamp(pitch, 10f, 80f);
-        }
-
-        Quaternion rotation = Quaternion.Euler(pitch, yaw, 0f);
-        mainCamera.transform.rotation = rotation;
-
-        Vector3 move = Vector3.zero;
-        if (Input.GetKey(KeyCode.W)) move += mainCamera.transform.forward;
-        if (Input.GetKey(KeyCode.S)) move -= mainCamera.transform.forward;
-        if (Input.GetKey(KeyCode.A)) move -= mainCamera.transform.right;
-        if (Input.GetKey(KeyCode.D)) move += mainCamera.transform.right;
-
-        mainCamera.transform.position += move * cameraMoveSpeed * Time.deltaTime;
     }
 }
