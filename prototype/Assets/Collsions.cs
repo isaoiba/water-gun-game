@@ -1,10 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Collsions : MonoBehaviour
 {
-    // Start is called before the first frame update
-
+    public LayerMask layerMask;
+    public GameObject origin;
+    public GameObject Player;
+    private void OnTriggerEnter(Collider collider)
+    {
+       Debug.Log("ddd");
+       Player.gameObject.transform.position = origin.transform.position;
+    }
+    
+    
 }
