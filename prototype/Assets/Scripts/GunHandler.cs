@@ -2,20 +2,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
- 
+
 [RequireComponent(typeof(LineRenderer))]
 public class RaycastGun : MonoBehaviour
 {
-        
+
     public Camera playerCamera;
     public Transform laserOrigin;
     public float gunRange = 50f;
     public float fireRate = 0.05f;
     public float laserDuration = 0.05f;
- 
+    public LayerMask enemyLayer;
+
     LineRenderer laserLine;
     float fireTimer;
- 
+
     void Awake()
     {
         laserLine = GetComponent<LineRenderer>();
@@ -29,43 +30,78 @@ public class RaycastGun : MonoBehaviour
     void LateUpdate()
     {
         fireTimer += Time.deltaTime;
-        Vector3 rayOrigin = playerCamera.ViewportToWorldPoint(new Vector3(0.5f, 0, 0));
+        Vector3 rayOrigin = playerCamera.ViewportToWorldPoint(new Vector3(0f, 0f, 0f));
         RaycastHit hit;
-        if(Physics.Raycast(rayOrigin, playerCamera.transform.forward, out hit, gunRange))
+        if (Input.GetMouseButton(0))
         {
-            laserLine.SetPosition(1, hit.point);
-            if(Input.GetMouseButton(0))
+            laserLine.enabled = true;
+            Debug.Log("Fired");
+            
+            if (Physics.Raycast(rayOrigin, playerCamera.transform.forward, out hit, gunRange, enemyLayer))
             {
-                if(fireTimer > fireRate)
+                Debug.Log("hit enemy layer");
+                laserLine.SetPosition(1, hit.point);
+                if (fireTimer > fireRate)
                 {
                     fireTimer = 0;
-                    laserLine.enabled = true;
-                    if (hit.collider.gameObject.TryGetComponent(out EnemyHandler enemy))
-                    {
-                        enemy.SubtractHealth(10f);
-                    }
+                    Debug.Log("Hit enemy");
+                    hit.collider.gameObject.GetComponent<EnemyHandler>().SubtractHealth(10f);
                 }
             }
             else
             {
-                laserLine.enabled = false;
+                laserLine.SetPosition(1, rayOrigin + (playerCamera.transform.forward * gunRange));
+            }
+        }
+        else 
+        {
+            laserLine.enabled = false;
+        }
+    }
+}
+
+/*
+void LateUpdate()
+{
+    fireTimer += Time.deltaTime;
+    Vector3 rayOrigin = playerCamera.ViewportToWorldPoint(new Vector3(0.5f, 0, 0));
+    RaycastHit hit;
+    if(Physics.Raycast(rayOrigin, playerCamera.transform.forward, out hit, gunRange, enemyLayer))
+    {
+        laserLine.SetPosition(1, hit.point);
+        if(Input.GetMouseButton(0))
+        {
+            if(fireTimer > fireRate)
+            {
+                fireTimer = 0;
+                laserLine.enabled = true;
+                if (hit.collider.gameObject.TryGetComponent(out EnemyHandler enemy))
+                {
+                    Debug.Log("Hit enemy");
+                    enemy.SubtractHealth(10f);
+                }
             }
         }
         else
         {
-            laserLine.SetPosition(1, rayOrigin + (playerCamera.transform.forward * gunRange));
-            if(Input.GetMouseButton(0))
+            laserLine.enabled = false;
+        }
+    }
+    else
+    {
+        laserLine.SetPosition(1, rayOrigin + (playerCamera.transform.forward * gunRange));
+        if(Input.GetMouseButton(0))
+        {
+            if(fireTimer > fireRate)
             {
-                if(fireTimer > fireRate)
-                {
-                    fireTimer = 0;
-                    laserLine.enabled = true;
-                }
+                fireTimer = 0;
+                laserLine.enabled = true;
             }
-            else
-            {
-                laserLine.enabled = false;
-            }
+        }
+        else
+        {
+            laserLine.enabled = false;
         }
     }
 }
+*/
