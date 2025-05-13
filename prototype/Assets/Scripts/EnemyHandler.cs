@@ -20,7 +20,8 @@ public class EnemyHandler : MonoBehaviour
     
     public Collsions something;
 
-    public float Health = 100f;
+    private float Health = 100f;
+    public GameObject playerObject;
 
     void OnGUI()
     {
@@ -37,12 +38,14 @@ public class EnemyHandler : MonoBehaviour
 
     public void SubtractHealth(float Damage)
     {
+        Debug.Log("Health was " + Health);
         Health -= Damage;
+        Debug.Log("Health is " + Health);
 
         if (Health <= 0f)
         {
-            SetCountText();
             ++count;
+            SetCountText();
             Destroy(gameObject);
         }
     }
@@ -52,7 +55,7 @@ public class EnemyHandler : MonoBehaviour
         Debug.Log("Collision");
         if (collider.gameObject.CompareTag("Hitbox"))
         {
-            Destroy(collider.gameObject);
+            Destroy(playerObject.gameObject);
             winTextObject.gameObject.SetActive(true);
             winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose!";
         }
@@ -60,10 +63,10 @@ public class EnemyHandler : MonoBehaviour
     public void SetCountText() 
     {
         // Update the count text with the current count.
-        //countText.text = "Enemies killed: " + count + "/5";
+        countText.text = "Enemies killed: " + count + "/70";
 
         // Check if the count has reached or exceeded the win condition.
-        if (count >= 5)
+        if (count >= 70)
         {
             // Display the win text.
             winTextObject.SetActive(true);

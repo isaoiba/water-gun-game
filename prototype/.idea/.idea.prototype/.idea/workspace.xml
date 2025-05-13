@@ -7,11 +7,9 @@
     <list default="true" id="dd0c565a-c92c-478d-a9f5-95466ce247c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/EnemyCube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/EnemyCube.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Core/KinematicCharacterMotor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Core/KinematicCharacterMotor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/All levels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/All levels.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GunHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GunHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +112,8 @@
       <workItem from="1746732990724" duration="94000" />
       <workItem from="1747080323312" duration="460000" />
       <workItem from="1747080804820" duration="2016000" />
+      <workItem from="1747164797768" duration="69000" />
+      <workItem from="1747164877165" duration="2809000" />
     </task>
     <servers />
   </component>

@@ -174,6 +174,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -236,6 +248,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -450,6 +474,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -512,6 +548,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -550,10 +598,11 @@ Transform:
   m_GameObject: {fileID: 93308437}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.21405506, y: -0.27, z: 0.937}
+  m_LocalPosition: {x: -0.21405506, y: -0.27, z: 0.732}
   m_LocalScale: {x: 0.24954, y: 0.20265, z: 0.56027}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 421758150}
   m_Father: {fileID: 58309629}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &93308439
@@ -597,7 +646,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac31c4803d21f2a46b155a46970b7d1a, type: 2}
+  - {fileID: 2100000, guid: 322d0fc93cc75704c93813abe7988631, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -679,6 +728,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -741,6 +802,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -803,6 +876,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -865,6 +950,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -927,6 +1024,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -989,6 +1098,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1051,6 +1172,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1113,6 +1246,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1175,6 +1320,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1237,6 +1394,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1304,6 +1473,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1366,6 +1547,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1521,6 +1714,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1531,6 +1736,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
   m_PrefabInstance: {fileID: 417298072}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &421758149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 421758150}
+  m_Layer: 2
+  m_Name: rayOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &421758150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421758149}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 93308438}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &422445107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,6 +1937,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1722,9 +1970,9 @@ GameObject:
   - component: {fileID: 438895318}
   - component: {fileID: 438895320}
   - component: {fileID: 438895319}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Hitbox
-  m_TagString: Untagged
+  m_TagString: Hitbox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1859,6 +2107,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1921,6 +2181,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1983,6 +2255,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2170,6 +2454,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2232,6 +2528,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2294,6 +2602,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2356,6 +2676,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2418,6 +2750,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2739,6 +3083,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2851,6 +3207,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2918,16 +3286,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 609125078}
     - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
       propertyPath: winTextObject
       value: 
       objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6293993402332083831, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1484391428}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
 --- !u!1001 &757022851
 PrefabInstance:
@@ -2981,6 +3350,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3043,6 +3424,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3198,6 +3591,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3260,6 +3665,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3322,6 +3739,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3415,6 +3844,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3477,6 +3918,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3539,6 +3992,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3601,6 +4066,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3663,6 +4140,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3725,6 +4214,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3787,6 +4288,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3849,6 +4362,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3911,6 +4436,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3973,6 +4510,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4066,6 +4615,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4128,6 +4689,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4190,6 +4763,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4252,6 +4837,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4439,6 +5036,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4501,6 +5110,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4563,6 +5184,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4625,6 +5258,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4687,6 +5332,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4749,6 +5406,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4811,6 +5480,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4821,38 +5502,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
   m_PrefabInstance: {fileID: 1477723738}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1484391421 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6293993402332083831, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
-  m_PrefabInstance: {fileID: 729925006}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1484391428
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484391421}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!1001 &1496411578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4905,6 +5554,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4945,6 +5606,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 328739452}
+  - {fileID: 2119727737}
   - {fileID: 1189154684}
   - {fileID: 1044390042}
   - {fileID: 1022722283}
@@ -5068,6 +5730,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5130,6 +5804,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5192,6 +5878,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5254,6 +5952,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5316,6 +6026,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5512,6 +6234,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5574,6 +6308,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5636,6 +6382,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5696,7 +6454,7 @@ MonoBehaviour:
   standHeight: 2
   crouchHeight: 1
   crouchHeightResponse: 15
-  standCameraTargetHeight: 0.5
+  standCameraTargetHeight: 0.4
   crouchCameraTargetHeight: 0
 --- !u!4 &1839977010
 Transform:
@@ -5948,10 +6706,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 58309628}
-  laserOrigin: {fileID: 93308438}
+  laserOrigin: {fileID: 421758150}
   gunRange: 50
   fireRate: 0.05
   laserDuration: 0.05
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1907849080
 GameObject:
   m_ObjectHideFlags: 0
@@ -6055,6 +6816,76 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &1915722418
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1519914236}
+    m_Modifications:
+    - target: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1117.1268
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293993402332083831, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: m_Name
+      value: EnemyCube (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
+    m_RemovedComponents:
+    - {fileID: 4161389732406820271, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
 --- !u!1001 &1917164213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6107,6 +6938,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6169,6 +7012,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6231,6 +7086,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6341,6 +7208,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6403,6 +7282,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6465,6 +7356,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 609125078}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 1839977008}
+    - target: {fileID: 7633324745061678760, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 1690463716}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6474,6 +7377,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
   m_PrefabInstance: {fileID: 2056531681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2119727737 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3163353466836717469, guid: c6a16ad057170994e9ae3e371d198199, type: 3}
+  m_PrefabInstance: {fileID: 1915722418}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

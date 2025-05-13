@@ -124,7 +124,7 @@ MonoBehaviour:
   winTextObject: {fileID: 0}
   count: 0
   something: {fileID: 0}
-  Health: 100
+  playerObject: {fileID: 0}
 --- !u!195 &410570956351961587
 NavMeshAgent:
   m_ObjectHideFlags: 0
