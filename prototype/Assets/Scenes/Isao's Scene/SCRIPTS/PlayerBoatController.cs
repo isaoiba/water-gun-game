@@ -31,6 +31,8 @@ public class PlayerBoatController : MonoBehaviour
     private bool initialized = false;
     private bool isTouchingLand = false;
 
+    private Vector3 landDirectionNormalized = Vector3.right;
+
     void Update()
     {
         if (!isActive || !isControllable)
@@ -146,6 +148,7 @@ void HandleCamera()
         if (collision.gameObject.GetComponent<Terrain>())
         {
             isTouchingLand = true;
+            landDirectionNormalized = (collision.gameObject.transform.position-transform.position).normalized;
             Debug.Log("isTouchingLand" + isTouchingLand);
         }
     }
@@ -162,5 +165,9 @@ void HandleCamera()
     public bool IsTouchingLand()
     {
         return isTouchingLand;
+    }
+
+    public Vector3 GetLandDirection(){
+        return landDirectionNormalized;
     }
 }

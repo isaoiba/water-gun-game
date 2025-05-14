@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using KinematicCharacterController;
 
 public class BoatGameManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class BoatGameManager : MonoBehaviour
 
     public Camera playerCamera; // Camera for walking around
     public Camera boatCamera;   // Camera for when on the boat
+    public GameObject ocean;
 
     public TextMeshProUGUI messageText;
 
@@ -22,6 +24,8 @@ public class BoatGameManager : MonoBehaviour
     public float reboardDistance = 3f; // Distance required to reboard the boat
 
     private bool isOnBoat = false;
+    
+    private BoxCollider[] boatBoxColliders;
 
     void Start()
     {
@@ -32,10 +36,16 @@ public class BoatGameManager : MonoBehaviour
         // Enable only the player camera initially
         playerCamera.enabled = true;
         boatCamera.enabled = false;
+        
+        boatBoxColliders = boatController.GetComponentsInChildren<BoxCollider>();
     }
 
     void Update()
     {
+        foreach (BoxCollider col in boatBoxColliders)
+            {
+                col.enabled = true;
+            }
         if (isOnBoat && boatController.IsTouchingLand())
         {
             messageText.text = "Press F to get off the boat";
@@ -46,6 +56,11 @@ public class BoatGameManager : MonoBehaviour
         }
         else if (!isOnBoat)
         {
+            ocean.transform.localScale = new Vector3(10000f, 10000f, 1f);
+            foreach (BoxCollider col in boatBoxColliders)
+            {
+                col.enabled = false;
+            }
             float distanceToBoat = Vector3.Distance(player.transform.position, boatController.transform.position);
 
             if (distanceToBoat <= reboardDistance)
@@ -63,6 +78,7 @@ public class BoatGameManager : MonoBehaviour
         }
         else
         {
+        ocean.transform.localScale = new Vector3(300f, 300f, 1f);
             messageText.text = "";
         }
     }
@@ -82,9 +98,8 @@ public class BoatGameManager : MonoBehaviour
         cube.SetActive(false); // Hide cube when on boat
     }
 
- void GetOffBoat()
+void GetOffBoat()
 {
-    // Only allow getting off if boat is touching land
     if (!boatController.IsTouchingLand())
     {
         messageText.text = "You can only get off near land!";
@@ -96,18 +111,44 @@ public class BoatGameManager : MonoBehaviour
     boatController.isActive = false;
     boatController.mainCamera = null;
 
-    // Move player slightly to the side of the boat when disembarking
-    Vector3 exitPosition = boatController.transform.position + boatController.transform.right * getOffOffset;
-    player.transform.position = exitPosition;
+    // Calculate exit position
+    Vector3 exitPosition = boatController.transform.position + boatController.GetLandDirection() * getOffOffset + Vector3.up * 5f;
 
+    // Teleport player correctly
+    var motor = player.GetComponent<KinematicCharacterMotor>();
+    var characterController = player.GetComponent<CharacterController>();
+    var rigidbody = player.GetComponent<Rigidbody>();
+
+    if (motor != null)
+    {
+        motor.SetPosition(exitPosition, false);
+    }
+    else if (characterController != null)
+    {
+        characterController.enabled = false;
+        player.transform.position = exitPosition;
+        characterController.enabled = true;
+    }
+    else if (rigidbody != null)
+    {
+        rigidbody.velocity = Vector3.zero;
+        rigidbody.position = exitPosition;
+    }
+    else
+    {
+        player.transform.position = exitPosition;
+    }
+
+    // Activate the player
     SetPlayerActive(true);
 
     // Camera switch
     playerCamera.enabled = true;
     boatCamera.enabled = false;
 
-    cube.SetActive(true); // Show cube when off boat
+    cube.SetActive(true);
 }
+
 
 
     void SetPlayerActive(bool active)
@@ -120,4 +161,17 @@ public class BoatGameManager : MonoBehaviour
             controller.enabled = active;
         }
     }
+
+    void RespawnPlayerByBoat()
+{
+    Vector3 respawnPosition = boatController.transform.position;
+    player.transform.position = respawnPosition;
+
+    // Optional: reset camera rotation or other states
+    if (playerCamera != null)
+    {
+        playerCamera.transform.LookAt(boatController.transform.position);
+    }
+}
+
 }
