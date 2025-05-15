@@ -12,9 +12,9 @@ public class Collsions : MonoBehaviour
     public GameObject Player;
     private void OnTriggerEnter(Collider collider)
     {
-       Debug.Log("ddd");
-       Player.gameObject.transform.position = origin.transform.position;
+        if (collider.gameObject.CompareTag("Cube"))
+        {
+            Player.gameObject.transform.position = origin.transform.position;
+        }
     }
-    
-    
 }

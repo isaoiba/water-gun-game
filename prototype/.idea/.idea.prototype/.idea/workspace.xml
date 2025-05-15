@@ -8,6 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Collsions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Collsions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/All levels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/All levels.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Isao's Scene/SCRIPTS/BoatGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Isao's Scene/SCRIPTS/BoatGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
@@ -113,7 +116,9 @@
       <workItem from="1747080323312" duration="460000" />
       <workItem from="1747080804820" duration="2016000" />
       <workItem from="1747164797768" duration="69000" />
-      <workItem from="1747164877165" duration="5001000" />
+      <workItem from="1747164877165" duration="5129000" />
+      <workItem from="1747337685384" duration="10000" />
+      <workItem from="1747338098467" duration="4467000" />
     </task>
     <servers />
   </component>

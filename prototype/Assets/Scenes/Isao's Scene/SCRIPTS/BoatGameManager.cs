@@ -97,10 +97,12 @@ public class BoatGameManager : MonoBehaviour
     boatController.mainCamera = null;
 
     // Move player slightly to the side of the boat when disembarking
+    
     Vector3 exitPosition = boatController.transform.position + boatController.transform.right * getOffOffset;
-    player.transform.position = exitPosition;
 
     SetPlayerActive(true);
+    
+    player.transform.position = exitPosition;
 
     // Camera switch
     playerCamera.enabled = true;
