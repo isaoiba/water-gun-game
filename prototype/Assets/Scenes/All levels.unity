@@ -4941,7 +4941,7 @@ MonoBehaviour:
   oceanSurface: {fileID: 1144299112}
   oceanSurfaceOffset: {x: 0, y: -0.2, z: 0}
   mouseSensitivity: 2
-  cameraOffset: {x: 0, y: 8, z: 20}
+  cameraOffset: {x: 0, y: -8, z: 20}
 --- !u!1001 &1226748547
 PrefabInstance:
   m_ObjectHideFlags: 0
