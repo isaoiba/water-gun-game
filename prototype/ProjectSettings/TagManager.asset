@@ -7,7 +7,11 @@ TagManager:
   - Enemy
   - Ocean
   - Hitbox
+<<<<<<< HEAD
   - Terrain
+=======
+  - Cube
+>>>>>>> 366a6e3a8acc40d77a8c9f044088d7416ea4271a
   layers:
   - Default
   - TransparentFX
@@ -20,8 +24,8 @@ TagManager:
   - Suimono_Water
   - Suimono_Depth
   - Suimono_Screen
-  - 
-  - 
+  - Player
+  - grub
   - 
   - 
   - 

@@ -13,7 +13,7 @@ public class EnemyHandler : MonoBehaviour
 
     // UI object to display winning text.
     public GameObject winTextObject;
-    public int count;
+    public static int count;
     
     Rect rect = new Rect(0, 0, 300, 100);
     Vector3 offset = new Vector3(0f, 0f, 0.5f); // height above the target position
@@ -22,10 +22,11 @@ public class EnemyHandler : MonoBehaviour
 
     private float Health = 100f;
     public GameObject playerObject;
+    private Camera camera;
 
     void OnGUI()
     {
-        Vector3 point = Camera.main.WorldToScreenPoint(gameObject.transform.position + offset);
+        Vector3 point = camera.WorldToScreenPoint(gameObject.transform.position + offset);
         rect.x = point.x;
         rect.y = Screen.height - point.y - rect.height; // bottom left corner set to the 3D point
         GUI.Label(rect, "Health:"+ Health); // display its name, or other string
@@ -33,7 +34,9 @@ public class EnemyHandler : MonoBehaviour
 
     private void Start()
     {
+        count = 0;
         something = GameObject.FindObjectOfType(typeof(Collsions)) as Collsions;
+        camera = Camera.main;
     }
 
     public void SubtractHealth(float Damage)
@@ -44,9 +47,10 @@ public class EnemyHandler : MonoBehaviour
 
         if (Health <= 0f)
         {
-            ++count;
+            Debug.Log("Dead");
+            count = count + 1;
+            Debug.Log(count);
             SetCountText();
-            Destroy(gameObject);
         }
     }
     
@@ -60,7 +64,7 @@ public class EnemyHandler : MonoBehaviour
             winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose!";
         }
     }
-    public void SetCountText() 
+    private void SetCountText() 
     {
         // Update the count text with the current count.
         countText.text = "Enemies killed: " + count + "/70";
@@ -71,5 +75,8 @@ public class EnemyHandler : MonoBehaviour
             // Display the win text.
             winTextObject.SetActive(true);
         }
+        
+        Destroy(gameObject);
+
     }
 }

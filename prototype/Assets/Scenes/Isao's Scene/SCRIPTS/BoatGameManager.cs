@@ -111,8 +111,14 @@ void GetOffBoat()
     boatController.isActive = false;
     boatController.mainCamera = null;
 
+<<<<<<< HEAD
     // Calculate exit position
     Vector3 exitPosition = boatController.transform.position + boatController.GetLandDirection() * getOffOffset + Vector3.up * 5f;
+=======
+    // Move player slightly to the side of the boat when disembarking
+    
+    Vector3 exitPosition = boatController.transform.position + boatController.transform.right * getOffOffset;
+>>>>>>> 366a6e3a8acc40d77a8c9f044088d7416ea4271a
 
     // Teleport player correctly
     var motor = player.GetComponent<KinematicCharacterMotor>();
@@ -141,6 +147,8 @@ void GetOffBoat()
 
     // Activate the player
     SetPlayerActive(true);
+    
+    player.transform.position = exitPosition;
 
     // Camera switch
     playerCamera.enabled = true;

@@ -62,6 +62,8 @@ public class PlayerCharacter : MonoBehaviour, ICharacterController
         
         private bool _requestedJump;
 
+        private bool _debounce;
+
         private bool _requestedSustainedJump;
         
         private bool _requestedCrouch;
@@ -135,6 +137,7 @@ public class PlayerCharacter : MonoBehaviour, ICharacterController
         {
                 if (motor.GroundingStatus.IsStableOnGround)
                 {
+                        _debounce = false;
                         var groundedMovement = motor.GetDirectionTangentToSurface
                         (
                                 direction: _requestedMovement,
@@ -191,6 +194,7 @@ public class PlayerCharacter : MonoBehaviour, ICharacterController
 
                 if (_requestedJump)
                 {
+                        _debounce = true;
                         _requestedJump = false;
                         
                         motor.ForceUnground(time : 0f);
@@ -199,6 +203,7 @@ public class PlayerCharacter : MonoBehaviour, ICharacterController
                         var targetVerticalSpeed = Mathf.Max(currentVerticalSpeed, jumpSpeed);
                         
                         currentVelocity += motor.CharacterUp * (targetVerticalSpeed - currentVerticalSpeed);
+                        
                 }
         }
 
