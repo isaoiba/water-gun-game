@@ -25,13 +25,30 @@ public class PlayerBoatController : MonoBehaviour
     // Camera rotation
     public float mouseSensitivity = 2.0f;
     private float yaw = -102.4f;       
-    public Vector3 cameraOffset;
+    private Vector3 cameraOffset;
     private float pitch = 20.0f;
  
     private bool initialized = false;
     private bool isTouchingLand = false;
 
     private Vector3 landDirectionNormalized = Vector3.right;
+
+    void Start()
+    {
+        if (mainCamera != null)
+        {
+            // Set offset based on current distance between camera and boat
+            cameraOffset = mainCamera.transform.position - transform.position;
+
+            // Optionally, you can directly set the camera’s initial position to match the boat
+            mainCamera.transform.position = transform.position + cameraOffset;
+
+            // Initialize yaw and pitch based on current camera rotation
+            Vector3 angles = mainCamera.transform.eulerAngles;
+            yaw = angles.y;
+            pitch = angles.x;
+        }
+    }
 
     void Update()
     {
@@ -126,7 +143,7 @@ void HandleCamera()
     }
 
     // Create rotation based on updated pitch and yaw
-    Quaternion rotation = Quaternion.Euler(pitch, yaw, 0f);
+    Quaternion rotation = Quaternion.Euler(pitch, yaw, 50f);
 
     // Set camera position relative to the boat's position
     mainCamera.transform.position = transform.position + rotation * cameraOffset;

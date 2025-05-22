@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d08afa9a0962441a4e668da56a091e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 0.08
+  sensitivity: 0.05
 --- !u!114 &58309626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4935,13 +4935,12 @@ MonoBehaviour:
   isControllable: 1
   moveSpeed: 20
   rotationSpeed: 30
-  slowedMoveSpeed: 1
-  slowedRotationSpeed: 15
+  slowedMoveSpeed: 0.1
+  slowedRotationSpeed: 1
   mainCamera: {fileID: 1432741761}
   oceanSurface: {fileID: 1144299112}
   oceanSurfaceOffset: {x: 0, y: -0.2, z: 0}
   mouseSensitivity: 2
-  cameraOffset: {x: 0, y: -8, z: 20}
 --- !u!1001 &1226748547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5866,7 +5865,7 @@ Transform:
   m_GameObject: {fileID: 1432741757}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.779338, z: -0.6266039, w: 0}
-  m_LocalPosition: {x: 0, y: -8.11, z: 3.84}
+  m_LocalPosition: {x: 0, y: -14.71, z: 7.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7566,7 +7565,7 @@ MonoBehaviour:
   laserDuration: 0.05
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
 --- !u!1 &1853068137
 GameObject:
   m_ObjectHideFlags: 0
