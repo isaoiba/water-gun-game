@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 1395874215}
   - component: {fileID: 1395874214}
   - component: {fileID: 1395874213}
+  - component: {fileID: 1395874216}
   m_Layer: 5
   m_Name: Start Button
   m_TagString: Untagged
@@ -507,6 +508,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395874211}
   m_CullTransparentMesh: 1
+--- !u!114 &1395874216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395874211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9e8ff7553af6d49a48cf1a4316219b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: All levels
 --- !u!1 &1463577882
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +621,7 @@ Transform:
   m_GameObject: {fileID: 1463577882}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 7.05}
+  m_LocalPosition: {x: 0, y: -0, z: 0.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
