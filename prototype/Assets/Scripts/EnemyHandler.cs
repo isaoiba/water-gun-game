@@ -18,8 +18,6 @@ public class EnemyHandler : MonoBehaviour
     Rect rect = new Rect(0, 0, 300, 100);
     Vector3 offset = new Vector3(0f, 0f, 0.5f); // height above the target position
     
-    public Collsions something;
-
     private float Health = 100f;
     public GameObject playerObject;
     private Camera camera;
@@ -35,7 +33,6 @@ public class EnemyHandler : MonoBehaviour
     private void Start()
     {
         count = 0;
-        something = GameObject.FindObjectOfType(typeof(Collsions)) as Collsions;
         camera = Camera.main;
     }
 
