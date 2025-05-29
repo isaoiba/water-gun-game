@@ -56,7 +56,7 @@ public class EnemyHandler : MonoBehaviour
         Debug.Log("Collision");
         if (collider.gameObject.CompareTag("Hitbox"))
         {
-            Destroy(playerObject.gameObject);
+            playerObject.SetActive(false);
             winTextObject.gameObject.SetActive(true);
             winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose!";
         }

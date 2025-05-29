@@ -64,7 +64,7 @@ public class Collisions : MonoBehaviour
     {
         winTextObject.gameObject.SetActive(true);
         winTextObject.GetComponent<TextMeshProUGUI>().text = "You Drowned!";
-        Destroy(character);
+        character.SetActive(false);
     }
 
     private void SetOverlayAlpha(float alpha)
