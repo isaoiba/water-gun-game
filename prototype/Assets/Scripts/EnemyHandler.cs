@@ -64,7 +64,7 @@ public class EnemyHandler : MonoBehaviour
     private void SetCountText() 
     {
         // Update the count text with the current count.
-        countText.text = "Enemies killed: " + count + "/70";
+        countText.text = "Enemies killed: " + count + "/91";
 
         // Check if the count has reached or exceeded the win condition.
         if (count >= 70)
