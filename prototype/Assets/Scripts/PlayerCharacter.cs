@@ -192,7 +192,7 @@ public class PlayerCharacter : MonoBehaviour, ICharacterController
                         currentVelocity += motor.CharacterUp * effectivegravity * deltaTime; 
                 }
 
-                if (_requestedJump)
+                if (_requestedJump && _debounce == false)
                 {
                         _debounce = true;
                         _requestedJump = false;
@@ -249,6 +249,7 @@ public class PlayerCharacter : MonoBehaviour, ICharacterController
         /// This is called after when the motor wants to know if the collider can be collided with (or if we just go through it)
         /// </summary>
         public bool IsColliderValidForCollisions(Collider coll) => true;
+
         /// <summary>
         /// This is called when the motor's ground probing detects a ground hit
         /// </summary>

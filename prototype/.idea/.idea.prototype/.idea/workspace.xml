@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd0c565a-c92c-478d-a9f5-95466ce247c9" name="Changes" comment="" />
+    <list default="true" id="dd0c565a-c92c-478d-a9f5-95466ce247c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.prototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/All levels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/All levels.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +20,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Collsions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GunHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -114,6 +119,8 @@
       <workItem from="1748894578205" duration="88000" />
       <workItem from="1748894677100" duration="1802000" />
       <workItem from="1748982617970" duration="6000" />
+      <workItem from="1749145984597" duration="724000" />
+      <workItem from="1749146761731" duration="449000" />
     </task>
     <servers />
   </component>
